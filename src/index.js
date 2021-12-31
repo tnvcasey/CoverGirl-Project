@@ -47,6 +47,6 @@ function summary (event) {
         <h3>Product Site</h3>
         <p>${product.product_link}</p>
         <h3>Product Type</h3>
-        <p>${product.type}</p>`
+        <p>${product.product_type}</p>`
     })
 }
