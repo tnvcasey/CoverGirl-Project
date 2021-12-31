@@ -27,3 +27,7 @@ function listItems () {
         product.addEventListener("click", summary)
     })
 }
+
+function summary (event) {
+    console.log(event.target.dataset.id)
+}
