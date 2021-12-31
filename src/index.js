@@ -16,6 +16,9 @@ function getList() {
                <li><a href="#" data-id ='${product.id}">${product.name}</a></li>
             `
         })
+        listItems(); 
+    })
+}
     
 
 const h1 = document.querySelector('h1'); 
