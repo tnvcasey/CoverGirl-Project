@@ -37,6 +37,14 @@ function summary (event) {
     .then(res => res.json())
     .then(product => {
         console.log(product)
+        makeup.innerHTML = `<h1>${product.name}</h1>
+        <h3></h3>
+        <p></p>
+        <h3></h3>
+        <p></p>
+        <h3></h3>
+        <p></p>
+        <h3></h3>
     })
 
 }
