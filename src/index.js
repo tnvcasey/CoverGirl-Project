@@ -20,3 +20,10 @@ function getList() {
 
 const h1 = document.querySelector('h1'); 
 h1.style.fontSize = "50px" 
+
+function listItems () {
+    const products = document.querySelector('a')
+    products.forEach((product) => {
+        product.addEventListener("click", summary)
+    })
+}
