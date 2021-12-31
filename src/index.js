@@ -34,7 +34,7 @@ function summary (event) {
     const ul = document.getElementById('product-list')
     ul.innerHTML= ''
     fetch(Base_URL + `/api/v1/products/${event.target.dataset.id}.json`)
-    .then(res => res.json)
+    .then(res => res.json())
     .then(product => {
         console.log(product)
     })
