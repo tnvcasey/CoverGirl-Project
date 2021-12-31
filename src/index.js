@@ -13,6 +13,10 @@ function getList() {
     .then(data => {
         data.forEach(product => {
             ul.innerHTML += `
-               <li>${product.name}</a></li>
+               <li><a href="#" data-id ='${product.id}">${product.name}</a></li>
             `
         })
+    
+
+const h1 = document.querySelector('h1'); 
+h1.style.fontSize = "50px" 
