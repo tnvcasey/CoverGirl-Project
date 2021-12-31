@@ -7,33 +7,33 @@ const Base_URL = "http://makeup-api.herokuapp.com"
 function getList() {
     const ul = document.getElementById('product-list')
     const makeup = document.getElementById("makeup")
-    
+    makeup.innerHTML= ""
+    ul.innerHTML= ""
     fetch(Base_URL + '/api/v1/products.json?brand=covergirl')
     .then(res => res.json())
     .then(data => {
         data.forEach(product => {
             ul.innerHTML += `
-               <li><a href="#" data-id ='${product.id}">${product.name}</a></li>
+               <li><a href="#" data-id="${product.id}">${product.name}</a></li>
             `
         })
         listItems(); 
     })
 }
-    
 
 const h1 = document.querySelector('h1'); 
 h1.style.fontSize = "50px" 
 
 function listItems () {
-    const products = document.querySelector('a')
+    const products = document.querySelectorAll('a')
     products.forEach((product) => {
-        product.addEventListener("click", summary)
+        product.addEventListener('click', summary)
     })
 }
 
 function summary (event) {
     console.log(event.target.dataset.id)
-    const makeup = document.getElementById('makeup')
+    const makeup = document.getElementById("makeup")
     const ul = document.getElementById('product-list')
     ul.innerHTML= ''
     fetch(Base_URL + `/api/v1/products/${event.target.dataset.id}.json`)
