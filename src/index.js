@@ -30,4 +30,6 @@ function listItems () {
 
 function summary (event) {
     console.log(event.target.dataset.id)
+    const makeup = document.getElementById('makeup')
+    
 }
