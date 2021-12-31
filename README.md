@@ -13,3 +13,5 @@ This first fetch is within a function the will create a list item for every one 
 
 At the top of the page there is a button called "all products" that has been created to take the user back to the main page (the unordered list of list item products.) The button has an event listener added to it that listens for the “click” and continues on the above mentioned function. 
 
+
+InnerHtml additions to the ul and summary have been added as get rid of the text different links are clicked so that only the list of products shows on the front page, and the summary shows after the individual product link is clicked. 
