@@ -38,13 +38,11 @@ function summary (event) {
     .then(product => {
         console.log(product)
         makeup.innerHTML = `<h1>${product.name}</h1>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
-        <h3></h3>
+        <h3>Product Details</h3>
+        <p>${product.description}</p>
+        <h3>Price</h3>
+        <p>${product.price}</p>
+        <h3>Product Site</h3>
+        <p>${product.product_link}</p>`
     })
-
 }
