@@ -32,7 +32,6 @@ function listItems () {
 }
 
 function summary (event) {
-
     const makeup = document.getElementById("makeup")
     const ul = document.getElementById('product-list')
     ul.innerHTML= ''
@@ -46,6 +45,8 @@ function summary (event) {
         <h3>Price</h3>
         <p>${product.price}</p>
         <h3>Product Site</h3>
-        <p>${product.product_link}</p>`
+        <p>${product.product_link}</p>
+        <h3>Product Type</h3>
+        <p>${product.type}</p>`
     })
 }
