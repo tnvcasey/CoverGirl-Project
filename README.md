@@ -11,4 +11,5 @@ This site uses fetch() to send a request to a public API and receives a promise 
 
 This first fetch is within a function the will create a list item for every one of the products when they are returned from from the API. Each of the 54 list item is then given a link that has an event listener that listens for the user to click. Once the user clicks the link it will take you to the specific product page which is given code that calls a second fetch that receives information for each product based on the product ID. HTML tags were inserted into the summary function so that each product could be given a description, price, and the url that can take you to the page for the specific product. 
 
-At the top of the page there is a button that has been created to take the user back to the main page (the unordered list of list item products.) The button has an event listener added to it that listens for the “click” and continues on the above mentioned function. 
+At the top of the page there is a button called "all products" that has been created to take the user back to the main page (the unordered list of list item products.) The button has an event listener added to it that listens for the “click” and continues on the above mentioned function. 
+
