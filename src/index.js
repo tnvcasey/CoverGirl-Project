@@ -31,5 +31,7 @@ function listItems () {
 function summary (event) {
     console.log(event.target.dataset.id)
     const makeup = document.getElementById('makeup')
-    
+    const ul = document.getElementById('product-list')
+    ul.innerHTML= ''
+
 }
