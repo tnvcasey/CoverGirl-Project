@@ -37,7 +37,7 @@ function summary (event) {
     fetch(Base_URL + `/api/v1/products/${event.target.dataset.id}.json`)
     .then(res => res.json())
     .then(product => {
-        console.log(product)
+        
         makeup.innerHTML = `<h1>${product.name}</h1>
         <h3>Product Details</h3>
         <p>${product.description}</p>
