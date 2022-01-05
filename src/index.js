@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
 })
 const Base_URL = "http://makeup-api.herokuapp.com"
+
 function getList() {
     const ul = document.getElementById('product-list')
     const makeup = document.getElementById("makeup")
@@ -37,7 +38,6 @@ function summary (event) {
     fetch(Base_URL + `/api/v1/products/${event.target.dataset.id}.json`)
     .then(res => res.json())
     .then(product => {
-        
         makeup.innerHTML = `<h1>${product.name}</h1>
         <h3>Product Details</h3>
         <p>${product.description}</p>
@@ -49,3 +49,14 @@ function summary (event) {
         <p>${product.product_type}</p>`
     })
 }
+
+
+fetch(Base_URL),{
+    method: "POST", 
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify() 
+}
+.then(res => res.json)
+.then(data => console.log(data))
